@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .name-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 0.5rem;
+            color: #333;
+        }
+
+        .description {
+            margin: 0;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .website {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .website:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="name-card">
+        <div class="content">
+            <div class="name">Zhonglin Hu</div>
+            <div class="description">
+                Creative Director with 5+ years experience in digital design.
+                <a href="https://github.com/henryclw/" class="website" target="_blank">Visit my portfolio</a>
+            </div>
+        </div>
+        <img src="https://i.pravatar.cc/120?img=2" alt="Profile" class="profile-photo">
+    </div>
+</body>
+</html>
